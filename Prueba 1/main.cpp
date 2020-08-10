@@ -37,7 +37,6 @@ int main(int argc, char *argv[])
     BMPfileHeader bmpfile;
 
     file.read(reinterpret_cast<char *>(&bmpfile),sizeof(bmpfile));
-    std::cout << "char ID: " << bmpfile.id[0] <<bmpfile.id[1]<< " <input file>\n";
     
     if(file.gcount()!=sizeof(bmpfile))
     {
@@ -61,12 +60,12 @@ int main(int argc, char *argv[])
        
         if(bmpfile.id[0]=='B' && bmpfile.id[1]=='N')
         {   
-            std::cout<<"Valid BMP: "<<"\n";
-            std::cout<<"BMP size: "<<bmpfile.size<<"\n";
+            std::cout<<"Valid BMP\n";
+            std::cout<<"Size: "<<bmpfile.size<<"\n";
             std::cout<<"Offset: "<<bmpfile.offset<<"\n";
             std::cout<<"Size: "<<bmpfile.size2<<"\n";
-            std::cout<<"BMP ancho: "<<bmpfile.ancho<<"\n";
-            std::cout<<"BMP alto: "<<bmpfile.alto<<"\n";
+            std::cout<<"Width: "<<bmpfile.ancho<<"\n";
+            std::cout<<"Height: "<<bmpfile.alto<<"\n";
 
         } else
         {
@@ -79,12 +78,13 @@ int main(int argc, char *argv[])
     {
             if(bmpfile.id[0]=='B' && bmpfile.id[1]=='M')
         {   
-            std::cout<<"Valid BMP: "<<bmpfile.id[0]<<bmpfile.id[1]<<"\n";
-            std::cout<<"BMP size: "<<bmpfile.size<<"\n";
-            std::cout<<"Offset: "<<bmpfile.offset<<"\n";
-            std::cout<<"Size: "<<bmpfile.size2<<"\n";
-            std::cout<<"BMP ancho: "<<bmpfile.ancho<<"\n";
-            std::cout<<"BMP alto: "<<bmpfile.alto<<"\n";
+            //std::cout<<"char ID: "<<bmpfile.id[0]<<bmpfile.id[0]<<"\n";
+            std::cout<<"Valid BMP "<<"\n";
+            std::cout<<"Size: "<<bmpfile.size<< "\n";
+            std::cout<<"Offset: "<<bmpfile.offset<<" \n";
+            std::cout<<"Size: "<<bmpfile.size2<<" \n";
+            std::cout<<"Width: "<<bmpfile.ancho<<" \n";
+            std::cout<<"Height: "<<bmpfile.alto<<" \n\n";
 
         }
        
