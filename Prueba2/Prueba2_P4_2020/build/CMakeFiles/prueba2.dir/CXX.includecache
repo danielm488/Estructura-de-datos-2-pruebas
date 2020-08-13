@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dmarquez/Documents/Trabajos en clase/Prueba2/Prueba2_P4_2020/bmp.h
+cstdint
+-
+
+/home/dmarquez/Documents/Trabajos en clase/Prueba2/Prueba2_P4_2020/main.cpp
+iostream
+-
+fstream
+-
+bmp.h
+/home/dmarquez/Documents/Trabajos en clase/Prueba2/Prueba2_P4_2020/bmp.h
+

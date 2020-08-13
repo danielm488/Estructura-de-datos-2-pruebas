@@ -1,0 +1,3 @@
+/home/dmarquez/Documents/Trabajos en clase/Prueba2/Prueba2_P4_2020/build/CMakeFiles/rebuild_cache.dir
+/home/dmarquez/Documents/Trabajos en clase/Prueba2/Prueba2_P4_2020/build/CMakeFiles/edit_cache.dir
+/home/dmarquez/Documents/Trabajos en clase/Prueba2/Prueba2_P4_2020/build/CMakeFiles/prueba2.dir
