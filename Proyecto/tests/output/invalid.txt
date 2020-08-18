@@ -1,0 +1,6 @@
+Valid BMP
+Size: 9
+Offset: 5640704
+Size: 4224358
+Width: 0
+Height: 0
